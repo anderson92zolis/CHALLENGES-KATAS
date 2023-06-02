@@ -1,0 +1,2 @@
+# CHALLENGES-KATAS
+Practice Java
