@@ -2,7 +2,7 @@
 
 These katas will cover different aspects of Java programming and help you improve your problem-solving abilities. Here are a few katas you can try:
 
-    FizzBuzz:
+ 1.-   FizzBuzz:
     Write a program that prints the numbers from 1 to 100. But for multiples of three, print "Fizz" instead of the number, and for the multiples of five, print "Buzz." For numbers that are multiples of both three and five, print "FizzBuzz."
 
     Palindrome Checker:
@@ -33,3 +33,5 @@ These katas will cover different aspects of Java programming and help you improv
     Write a program that reads a text file, counts the occurrences of each word, and displays the most frequent words along with their counts.
 
 These katas cover a range of topics and will help you sharpen your Java programming skills. Remember to break down the problems into smaller tasks and write test cases for each kata to verify your implementations. Happy coding!
+
+
