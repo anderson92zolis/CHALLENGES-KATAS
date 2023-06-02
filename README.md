@@ -2,10 +2,10 @@
 
 These katas will cover different aspects of Java programming and help you improve your problem-solving abilities. Here are a few katas you can try:
 
- 1)   FizzBuzz:
+ 1)	FizzBuzz:
     Write a program that prints the numbers from 1 to 100. But for multiples of three, print "Fizz" instead of the number, and for the multiples of five, print "Buzz." For numbers that are multiples of both three and five, print "FizzBuzz."
 
-    Palindrome Checker:
+ 2)	Palindrome Checker:
     Write a function that checks whether a given string is a palindrome or not. A palindrome is a word, phrase, number, or other sequence of characters that reads the same backward as forward.
 
     Anagram Detector:
