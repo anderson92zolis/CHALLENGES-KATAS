@@ -8,7 +8,7 @@ These katas will cover different aspects of Java programming and help you improv
  2)	Palindrome Checker:
     Write a function that checks whether a given string is a palindrome or not. A palindrome is a word, phrase, number, or other sequence of characters that reads the same backward as forward.
 
-    Anagram Detector:
+ 3)	Anagram Detector:
     Write a function that checks if two strings are anagrams. An anagram is a word or phrase formed by rearranging the letters of another word or phrase.
 
     Prime Number Generator:
