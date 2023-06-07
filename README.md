@@ -2,19 +2,19 @@
 
 These katas will cover different aspects of Java programming and help you improve your problem-solving abilities. Here are a few katas you can try:
 
- 1)	FizzBuzz:
+1)	FizzBuzz:
     Write a program that prints the numbers from 1 to 100. But for multiples of three, print "Fizz" instead of the number, and for the multiples of five, print "Buzz." For numbers that are multiples of both three and five, print "FizzBuzz."
 
- 2)	Palindrome Checker:
+2)	Palindrome Checker:
     Write a function that checks whether a given string is a palindrome or not. A palindrome is a word, phrase, number, or other sequence of characters that reads the same backward as forward.
 
- 3)	Anagram Detector:
+3)	Anagram Detector:
     Write a function that checks if two strings are anagrams. An anagram is a word or phrase formed by rearranging the letters of another word or phrase.
 
- 4)   Prime Number Generator:
+4)   Prime Number Generator:
     Write a function that generates a list of prime numbers up to a given limit. A prime number is a number greater than 1 that has no positive divisors other than 1 and itself.
 
-    Fibonacci Sequence:
+5)  Fibonacci Sequence:
     Write a function that generates the Fibonacci sequence up to a specified number of terms. The Fibonacci sequence is a series of numbers in which each number is the sum of the two preceding ones.
 
     Matrix Transpose:
