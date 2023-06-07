@@ -11,7 +11,7 @@ These katas will cover different aspects of Java programming and help you improv
  3)	Anagram Detector:
     Write a function that checks if two strings are anagrams. An anagram is a word or phrase formed by rearranging the letters of another word or phrase.
 
-    Prime Number Generator:
+ 4)   Prime Number Generator:
     Write a function that generates a list of prime numbers up to a given limit. A prime number is a number greater than 1 that has no positive divisors other than 1 and itself.
 
     Fibonacci Sequence:
