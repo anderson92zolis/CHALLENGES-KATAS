@@ -17,7 +17,7 @@ These katas will cover different aspects of Java programming and help you improv
 5)  Fibonacci Sequence:
     Write a function that generates the Fibonacci sequence up to a specified number of terms. The Fibonacci sequence is a series of numbers in which each number is the sum of the two preceding ones.
 
-    Matrix Transpose:
+6)  Matrix Transpose:
     Write a function that transposes a given matrix. The transpose of a matrix is formed by interchanging its rows with columns.
 
     Binary Search:
