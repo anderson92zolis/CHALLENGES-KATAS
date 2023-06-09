@@ -11,7 +11,7 @@ These katas will cover different aspects of Java programming and help you improv
 3)	Anagram Detector:
     Write a function that checks if two strings are anagrams. An anagram is a word or phrase formed by rearranging the letters of another word or phrase.
 
-4)   Prime Number Generator:
+4)  Prime Number Generator:
     Write a function that generates a list of prime numbers up to a given limit. A prime number is a number greater than 1 that has no positive divisors other than 1 and itself.
 
 5)  Fibonacci Sequence:
@@ -20,7 +20,7 @@ These katas will cover different aspects of Java programming and help you improv
 6)  Matrix Transpose:
     Write a function that transposes a given matrix. The transpose of a matrix is formed by interchanging its rows with columns.
 
-    Binary Search:
+7)  Binary Search:
     Implement a binary search algorithm to find the index of a given element in a sorted array. If the element is not found, return -1.
 
     Linked List Operations:
