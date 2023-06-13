@@ -23,7 +23,7 @@ These katas will cover different aspects of Java programming and help you improv
 7)  Binary Search:
     Implement a binary search algorithm to find the index of a given element in a sorted array. If the element is not found, return -1.
 
-    Linked List Operations:
+8)  Linked List Operations:
     Implement basic operations for a linked list, such as inserting a node, deleting a node, and searching for a specific value.
 
     Sorting Algorithms:
