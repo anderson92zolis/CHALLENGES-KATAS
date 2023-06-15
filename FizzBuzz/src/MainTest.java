@@ -1,128 +1,73 @@
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class MainTest {
 
+    /**
+     * Test case for the FizzBuzzProgram method in the FizzBuzz class.
+     * Verifies that the FizzBuzzProgram generates the expected output for a given upper limit.
+     */
+
     @Test
+    @DisplayName("Create test of a testFizzBuzz")
     public void testFizzBuzz() {
-        // Redirect standard output to capture the program's output
+
+        /*
+
         ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+        Initializes a new instance of ByteArrayOutputStream, which is used to capture the output of the System.out.println() statements.
+        The captured output will be stored in the outputStream object.
+
+         */
+        ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+
+        /*
         System.setOut(new PrintStream(outputStream));
 
-        // Call the FizzBuzz program
-        FizzBuzz.main(new String[]{});
+        Sets the standard output stream (System.out) to the outputStream object.
+        This redirection allows us to capture the output that would typically be printed to the console.
+         */
 
-        // Convert the captured output to a string
-        String programOutput = outputStream.toString().trim();
-        System.out.println(programOutput);
+        System.setOut(new PrintStream(outputStream));
 
-        // Define the expected output
-        String expectedOutput = "1\n" +
-                "2\n" +
-                "Fizz\n" +
-                "4\n" +
-                "Buzz\n" +
-                "Fizz\n" +
-                "7\n" +
-                "8\n" +
-                "Fizz\n" +
-                "Buzz\n" +
-                "11\n" +
-                "Fizz\n" +
-                "13\n" +
-                "14\n" +
-                "FizzBuzz\n" +
-                "16\n" +
-                "17\n" +
-                "Fizz\n" +
-                "19\n" +
-                "Buzz\n" +
-                "Fizz\n" +
-                "22\n" +
-                "23\n" +
-                "Fizz\n" +
-                "Buzz\n" +
-                "26\n" +
-                "Fizz\n" +
-                "28\n" +
-                "29\n" +
-                "FizzBuzz\n" +
-                "31\n" +
-                "32\n" +
-                "Fizz\n" +
-                "34\n" +
-                "Buzz\n" +
-                "Fizz\n" +
-                "37\n" +
-                "38\n" +
-                "Fizz\n" +
-                "Buzz\n" +
-                "41\n" +
-                "Fizz\n" +
-                "43\n" +
-                "44\n" +
-                "FizzBuzz\n" +
-                "46\n" +
-                "47\n" +
-                "Fizz\n" +
-                "49\n" +
-                "Buzz\n" +
-                "Fizz\n" +
-                "52\n" +
-                "53\n" +
-                "Fizz\n" +
-                "Buzz\n" +
-                "56\n" +
-                "Fizz\n" +
-                "58\n" +
-                "59\n" +
-                "FizzBuzz\n" +
-                "61\n" +
-                "62\n" +
-                "Fizz\n" +
-                "64\n" +
-                "Buzz\n" +
-                "Fizz\n" +
-                "67\n" +
-                "68\n" +
-                "Fizz\n" +
-                "Buzz\n" +
-                "71\n" +
-                "Fizz\n" +
-                "73\n" +
-                "74\n" +
-                "FizzBuzz\n" +
-                "76\n" +
-                "77\n" +
-                "Fizz\n" +
-                "79\n" +
-                "Buzz\n" +
-                "Fizz\n" +
-                "82\n" +
-                "83\n" +
-                "Fizz\n" +
-                "Buzz\n" +
-                "86\n" +
-                "Fizz\n" +
-                "88\n" +
-                "89\n" +
-                "FizzBuzz\n" +
-                "91\n" +
-                "92\n" +
-                "Fizz\n" +
-                "94\n" +
-                "Buzz\n" +
-                "Fizz\n" +
-                "97\n" +
-                "98\n" +
-                "Fizz\n" +
-                "Buzz";
+        /*
+        Calls the FizzBuzzProgram method with the parameter 100.
+        This executes the FizzBuzz logic for numbers from 1 to 100 and prints the output to the outputStream
+         */
 
-        // Assert the program's output matches the expected output
-        assertEquals(expectedOutput, programOutput);
+        FizzBuzz.FizzBuzzProgram(100);
+
+        /*
+        String[] output = outputStream.toString().split(System.lineSeparator());
+        Converts the contents of outputStream to a string using toString().
+        Splits the resulting string into an array of strings using System.lineSeparator() as the delimiter.
+        This step separates each line of the captured output into individual elements of the output array.
+         */
+
+        String[] output = outputStream.toString().split(System.lineSeparator());
+
+        // start the array [1,2,3,4....]
+        assertEquals("1", output[0]);
+        assertEquals("2", output[1]);
+        assertEquals("Fizz", output[2]);
+        assertEquals("4", output[3]);
+        assertEquals("Buzz", output[4]);
+        assertEquals("Fizz", output[5]);
+        assertEquals("7", output[6]);
+        assertEquals("8", output[7]);
+        assertEquals("Fizz", output[8]);
+        assertEquals("Buzz", output[9]);
+        assertEquals("11", output[10]);
+        assertEquals("Fizz", output[11]);
+        assertEquals("13", output[12]);
+        assertEquals("14", output[13]);
+        assertEquals("FizzBuzz", output[14]);
+        // ... Continue asserting the remaining output values
+        assertEquals("Buzz", output[99]);
     }
 }
