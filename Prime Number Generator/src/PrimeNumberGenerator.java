@@ -32,25 +32,27 @@ public class PrimeNumberGenerator {
      * @param number All the possible numbers to be checked.
      * @return {@code ArrayList<Integer>} ArrayList<Integer> of all prime numbers
      */
-    public static  ArrayList<Integer> listOfPrimeNumbers(int number) {
+    public static ArrayList<Integer> listOfPrimeNumbers(int number) {
 
-        ArrayList<Integer> primesNumber = new ArrayList<Integer>();
+        ArrayList<Integer> primesNumber = new ArrayList<>();
 
         int countPrimes = 0;
 
         if (number >= 1) {
 
-            for(int bucleForInverseNumber=number; bucleForInverseNumber>=1; bucleForInverseNumber-- ) {
+            for (int bucleForInverseNumber = number; bucleForInverseNumber >= 1; bucleForInverseNumber--) {
 
                 for (int normalBucle = 1; normalBucle <= bucleForInverseNumber; normalBucle++) {
+
                     if (bucleForInverseNumber % normalBucle == 0) {
                         countPrimes++;
                     }
                 }
+
                 if (countPrimes == 2) {
                     primesNumber.add(bucleForInverseNumber);
                 }
-                countPrimes=0;
+                countPrimes = 0;
             }
         }
 

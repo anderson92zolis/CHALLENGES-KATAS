@@ -9,18 +9,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class MatrixTransposeTest {
 
-    @org.junit.jupiter.api.Test
-    void main() {
-    }
-
-    @org.junit.jupiter.api.Test
-    void createMatriz() {
-
-    }
-
-    @org.junit.jupiter.api.Test
-    void transposeMatriz() {
-    }
 
     @org.junit.jupiter.api.Test
     void printMatriz() {

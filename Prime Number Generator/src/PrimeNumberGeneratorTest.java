@@ -1,4 +1,5 @@
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.DisplayName;
 
 import java.util.ArrayList;
 
@@ -10,7 +11,12 @@ class PrimeNumberGeneratorTest {
     void main() {
     }
 
+    /**
+     * Test case for the listOfPrimeNumbers method in the PrimeNumberGenerator class.
+     * Verifies the correctness of the generated list of prime numbers for different inputs.
+     */
     @org.junit.jupiter.api.Test
+    @DisplayName("List of a PrimeNumbers")
     void listOfPrimeNumbers() {
         //  Test case: numberOne input
         int number= 1;

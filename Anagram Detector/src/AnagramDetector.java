@@ -47,7 +47,6 @@ public class AnagramDetector {
         Arrays.sort(charArray1);
         String string1 = new String(charArray1);
 
-
         word2 = word2.toLowerCase();
         char charArray2[] = word2.toCharArray();
         Arrays.sort(charArray2);

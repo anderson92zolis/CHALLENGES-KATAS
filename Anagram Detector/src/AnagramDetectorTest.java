@@ -1,11 +1,13 @@
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 class AnagramDetectorTest {
 
 
     @Test
-    public void testAnagramaWords() {
+    @DisplayName("Anagram Detector Test")
+    public void AnagramWordsTest() {
         // Test case 1: Anagram words
         String word1 = "listen";
         String word2 = "silent";

@@ -13,9 +13,6 @@ public class MatrixTranspose {
         printMatriz("Generating the new Matrix" ,matrix );
         printMatriz("Matrix transpose" ,transposeMatriz(matrix) );
 
-
-
-
     }
 
     /**

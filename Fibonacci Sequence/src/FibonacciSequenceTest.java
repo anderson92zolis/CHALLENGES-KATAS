@@ -7,8 +7,11 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class FibonacciSequenceTest {
 
+    /**
+     * Test case for verifying the FibonacciSequence of a given number in the FibonacciSequence class.
+     */
     @org.junit.jupiter.api.Test
-    @DisplayName("verify FibonacciSequence of a given number")
+    @DisplayName("Verify FibonacciSequence of a given number")
     void listOfFinonacciSeqTest() {
 
         ArrayList<Integer> expectedArray= new ArrayList<>();
