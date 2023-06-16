@@ -35,11 +35,11 @@ These katas will cover different aspects of Java programming and help you improv
 These katas cover a range of topics and will help you sharpen your Java programming skills. Remember to break down the problems into smaller tasks and write test cases for each kata to verify your implementations. Happy coding!
 
 11)  Array Manipulation:
-        Find the maximum element in an array.
-        Reverse an array in-place.
-        Calculate the sum of all elements in an array.
-        Remove duplicates from an array.
-        Find the second largest element in an array.
+        11.1) Find the maximum element in an array.
+        11.2) Reverse an array.
+        11.3) Calculate the sum of all elements in an array.
+        11.4) Remove duplicates from an array.
+        11.5) Find the second largest element in an array.
         Sort an array in ascending/descending order.
 
     Map Manipulation:
