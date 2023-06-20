@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.Random;
 import java.util.stream.IntStream;
 
@@ -128,7 +129,28 @@ public class ArrayManipulation {
                 .findFirst()
                 .orElseThrow(() -> new IllegalArgumentException("Array does not have a second largest element."));
     }
+
+    /**
+     * Sorts an array of integers in ascending order.
+     *
+     * @param array the array of integers to be sorted
+     */
     public void sortAsc(int[] array) {
         Arrays.sort(array);
     }
+
+    /**
+     * Sorts an array of integers in descending order.
+     *
+     * @param array the array of integers to be sorted
+     * @return a new array containing the sorted integers in descending order
+     */
+    public int[] sortDCS(int[] array) {
+        return Arrays.stream(array)
+                .boxed()
+                .sorted(Comparator.reverseOrder())
+                .mapToInt(Integer::intValue)
+                .toArray();
+    }
+
 }

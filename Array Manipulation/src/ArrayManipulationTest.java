@@ -6,10 +6,12 @@ import java.util.Arrays;
 
 class ArrayManipulationTest {
     ArrayManipulation arrayManipulationObject;
+    int[] arrayNumbers;
 
     @BeforeEach
     void setUp() {
         arrayManipulationObject = new ArrayManipulation();
+        arrayNumbers = new int[]{1, 2, 3, 4, 5};
     }
 
     @AfterEach
@@ -25,17 +27,17 @@ class ArrayManipulationTest {
             System.setOut(new PrintStream(outputStream));
 
             // Test case: Non-empty array
-            int[] array1 = {1, 2, 3, 4, 5};
-            arrayManipulationObject.printRandomArray(array1);
+
+            arrayManipulationObject.printRandomArray(arrayNumbers);
 
             // Convert console output to string
             String printedOutput = outputStream.toString().trim();
 
             // Verify printed output
             String[] outputLines = printedOutput.split(System.lineSeparator());
-            Assertions.assertEquals(array1.length, outputLines.length);
-            for (int i = 0; i < array1.length; i++) {
-                Assertions.assertEquals(String.valueOf(array1[i]), outputLines[i]);
+            Assertions.assertEquals(arrayNumbers.length, outputLines.length);
+            for (int i = 0; i < arrayNumbers.length; i++) {
+                Assertions.assertEquals(String.valueOf(arrayNumbers[i]), outputLines[i]);
             }
 
             // Test case: Empty array
@@ -48,7 +50,7 @@ class ArrayManipulationTest {
 
     @Test
     @DisplayName("create random array ")
-    public void CreateRandomArrayTest() {
+    public void createRandomArrayTest() {
 
         // Test case 1: Positive number of elements
         int[] result1 = arrayManipulationObject.createRandonArray(5);
@@ -74,12 +76,12 @@ class ArrayManipulationTest {
 
     @Test
     @DisplayName("find maximum value in the array")
-    void FindMaximumElementTest() {
+    void findMaximumElementTest() {
 
         // Test case 1: Non-empty array
-        int[] array1 = {2, 5, 1, 9, 4};
-        int expected1 = 9;
-        int actual1 = arrayManipulationObject.findMaximunElement(array1);
+
+        int expected1 = 5;
+        int actual1 = arrayManipulationObject.findMaximunElement(arrayNumbers);
         Assertions.assertEquals(expected1, actual1);
 
         // Test case 2: Empty array
@@ -91,17 +93,17 @@ class ArrayManipulationTest {
     }
     @Test
     @DisplayName("verify not empty array")
-    void testCheckNotEmpty_WithNonEmptyArray() {
-        int[] arrayWithValue = {1, 2, 3, 4, 5};
+    void checkNotEmpty_WithNonEmptyArrayTest() {
 
-        boolean result = arrayManipulationObject.checkNotEmpty(arrayWithValue);
+
+        boolean result = arrayManipulationObject.checkNotEmpty(arrayNumbers);
 
         Assertions.assertTrue(result);
     }
 
     @Test
     @DisplayName("verify empty array")
-    void testCheckNotEmpty_WithEmptyArray() {
+    void CheckNotEmpty_WithEmptyArrayTest() {
         int[] arrayEmpty = {};
         boolean result = arrayManipulationObject.checkNotEmpty(arrayEmpty);
 
@@ -109,8 +111,8 @@ class ArrayManipulationTest {
     }
     @Test
     @DisplayName("reverse a array")
-    void testReverseArray() {
-        int[] arrayNumbers = {1, 2, 3, 4, 5};
+    void reverseArrayTest() {
+
         int[] expected = {5, 4, 3, 2, 1};
         int[] reversedArray = arrayManipulationObject.reverseArray(arrayNumbers);
         Assertions.assertArrayEquals(expected, reversedArray);
@@ -118,32 +120,55 @@ class ArrayManipulationTest {
 
     @Test
     @DisplayName("sum all the values of the array")
-    void testSumArray() {
-        int[] array = {1, 2, 3, 4, 5};
+    void sumArrayTest() {
+
         int expectedSum = 15;
-        int actualSum = arrayManipulationObject.sumArray(array);
+        int actualSum = arrayManipulationObject.sumArray(arrayNumbers);
         Assertions.assertEquals(expectedSum, actualSum);
     }
 
     @Test
-    @DisplayName("Test removeDuplicates method")
+    @DisplayName("removeDuplicates method")
     public void testRemoveDuplicates() {
-        int[] input = {1, 2, 3, 4, 2, 3, 5};
         int[] expectedOutput = {1, 2, 3, 4, 5};
 
-        int[] actualOutput = arrayManipulationObject.removeDuplicates(input);
+        int[] actualOutput = arrayManipulationObject.removeDuplicates(arrayNumbers);
 
         Assertions.assertArrayEquals(expectedOutput, actualOutput, "Arrays should be equal");
     }
 
     @Test
-    @DisplayName("Test findSecondLargest method")
-    public void testFindSecondLargest() {
-        int[] array = {5, 2, 7, 3, 9, 8};
-        int expectedSecondLargest = 8;
+    @DisplayName("findSecondLargest method")
+    public void findSecondLargestTest() {
 
-        int actualSecondLargest = arrayManipulationObject.findSecondLargest(array);
+        int expectedSecondLargest = 4;
+
+        int actualSecondLargest = arrayManipulationObject.findSecondLargest(arrayNumbers);
 
         Assertions.assertEquals(expectedSecondLargest, actualSecondLargest, "Second largest elements should be equal");
+    }
+    @Test
+    @DisplayName("sort Array ASC")
+    public void sortAscTest() {
+
+        int[] expectedOutput = {1, 2, 3, 4, 5};
+
+        // Call the method under test
+        arrayManipulationObject.sortAsc(arrayNumbers);
+
+        // Check if the array is sorted in ascending order
+        Assertions.assertArrayEquals(expectedOutput, arrayNumbers);
+    }
+
+    @Test
+    @DisplayName("sort Array DSC")
+    public void sortDscTest() {
+        int[] expectedOutput = {5, 4, 3, 2, 1};
+
+        // Call the method under test
+        int[] desArray= arrayManipulationObject.sortDCS(arrayNumbers);
+
+        // Check if the array is sorted in ascending order
+        Assertions.assertArrayEquals(expectedOutput, desArray);
     }
 }

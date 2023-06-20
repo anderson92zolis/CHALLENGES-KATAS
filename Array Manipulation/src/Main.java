@@ -24,6 +24,7 @@ public class Main {
             arrayManipulation.printRandomArray(arrayManipulation.removeDuplicates(array));
             arrayManipulation.sortAsc(array);
             System.out.println("sorted ASC array: "+ Arrays.toString(array));
+            System.out.println("sorted DSC array: "+ Arrays.toString(arrayManipulation.sortDCS(array)));
         }
     }
 }
