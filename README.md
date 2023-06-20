@@ -40,10 +40,10 @@ These katas cover a range of topics and will help you sharpen your Java programm
         11.3) Calculate the sum of all elements in an array.
         11.4) Remove duplicates from an array.
         11.5) Find the second largest element in an array.
-        Sort an array in ascending/descending order.
+        11.6) Sort an array in ascending/descending order.
 
-    Map Manipulation:
-        Count the frequency of each element in an array using a map.
+12) Map Manipulation:
+        12.1) Count the frequency of each element in an array using a map.
         Remove entries with a specific value from a map.
         Merge two maps and handle duplicate keys.
         Sort a map by values in ascending/descending order.

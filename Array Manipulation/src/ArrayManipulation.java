@@ -136,6 +136,7 @@ public class ArrayManipulation {
      * @param array the array of integers to be sorted
      */
     public void sortAsc(int[] array) {
+        // https://stackoverflow.com/questions/54126952/how-to-sort-integer-array-in-ascending-and-descending-order-using-lambda-only-in
         Arrays.sort(array);
     }
 
@@ -146,6 +147,7 @@ public class ArrayManipulation {
      * @return a new array containing the sorted integers in descending order
      */
     public int[] sortDCS(int[] array) {
+        // https://stackoverflow.com/questions/54126952/how-to-sort-integer-array-in-ascending-and-descending-order-using-lambda-only-in
         return Arrays.stream(array)
                 .boxed()
                 .sorted(Comparator.reverseOrder())
