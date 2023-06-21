@@ -2,9 +2,7 @@ import java.util.Map;
 
 public class Main {
 
-
     public static void main(String[] args) {
-
 
         String[] animalNames1 = {
                 "Lion", "Tiger", "Elephant", "Lion", "Monkey", "Giraffe", "Tiger",
@@ -32,18 +30,28 @@ public class Main {
 
             System.out.println("OHHH YES!! THE ARRAY CONTAIN ELEMENTS!!");
 
-            System.out.println("COUNT ELEMENT");
-            Map<String, Integer> map = mapManipulationObject1.countElementsInArray();
+            System.out.println("\nCOUNT ELEMENT");
+            Map<String, Integer> map = mapManipulationObject1.mapCountElementsInArray();
             mapManipulationObject1.printMap(map);
 
-            System.out.println("REMOVE ELEMENT");
-            mapManipulationObject1.deleteKey("Monkey");
+            System.out.println("\nREMOVE ELEMENT");
+            mapManipulationObject1.removeKeyMap("Monkey");
             mapManipulationObject1.printMap(map);
 
-            System.out.println("MERGE TWO MAPS");
+            System.out.println("\nMERGE TWO MAPS");
             Map<String,Integer> mergeMap= mapManipulationObject1.mergeTwoMaps(mapManipulationObject1.getFrecuencyElements(),mapManipulationObject2.getFrecuencyElements() );
             mapManipulationObject1.printMap(mergeMap);
 
+            System.out.println("\nSORT MAP ASC");
+            Map<String,Integer> sortedMapAsc= mapManipulationObject1.sortValuesAsc();
+            mapManipulationObject1.printMap(sortedMapAsc);
+
+            System.out.println("\nSORT MAP ASC");
+            Map<String,Integer> sortedMapDSC=  mapManipulationObject1.sortValuesDSC();
+            mapManipulationObject1.printMap(sortedMapDSC);
+
+            System.out.println("\nPERFORM VARIOUS OPERATIONS (ADD, REMOVE, UPDATE) ON A MAP.");
+            mapManipulationObject1.optionProgram();
 
         } else {
             System.out.println("PUFFFFFFF!! THE ARRAY DOES'T CONTAIN ELEMETS!!  ");
