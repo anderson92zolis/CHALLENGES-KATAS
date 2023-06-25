@@ -21,8 +21,6 @@ public class Main {
                 "Elephant", "Lion", "Tiger", "Giraffe", "Monkey" */
         };
 
-
-
         MapManipulation mapManipulationObject1 = new MapManipulation(animalNames1);
         MapManipulation mapManipulationObject2 = new MapManipulation(animalNames2);
 

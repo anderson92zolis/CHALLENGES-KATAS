@@ -6,9 +6,9 @@ import java.util.stream.Collectors;
  * A class that provides methods for manipulating maps.
  */
 public class MapManipulation {
-    String[] array;
-    Map<String, Integer> frecuencyElements;
-    Scanner myObjScanner;
+    private String[] array;
+    private Map<String, Integer> frecuencyElements;
+    private Scanner myObjScanner;
 
     /**
      * Constructs a new instance of the MapManipulation class.
@@ -47,9 +47,14 @@ public class MapManipulation {
      */
     public void printMap(Map<String, Integer> map) {
         // Print keys and values
+        /*
         for (String i : map.keySet()) {
             System.out.println("Animal: " + i + ",\n\t numbers of repetitions: " + map.get(i));
         }
+
+         */
+
+        map.forEach((key,value)->System.out.println("Animal: " + key + ",\n\t numbers of repetitions: " + value));
     }
 
     /**
@@ -111,7 +116,9 @@ public class MapManipulation {
      * @return A new map with the frequency elements sorted in ascending order by their values.
      */
     public Map<String, Integer> sortValuesAsc() {
-        // https://www.baeldung.com/java-hashmap-sort
+
+        //  https://www.scaler.com/topics/sort-map-by-value-in-java/
+        //  https://www.baeldung.com/java-hashmap-sort
 
         Map<String, Integer> sortMapAsc = frecuencyElements
                 .entrySet()
@@ -190,6 +197,7 @@ public class MapManipulation {
         } else {
             frecuencyElements.put(animal, 1);
         }
+
     }
 
 
