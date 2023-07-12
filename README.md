@@ -44,10 +44,12 @@ These katas cover a range of topics and will help you sharpen your Java programm
 
 12) Map Manipulation:
         12.1) Count the frequency of each element in an array using a map.
-        Remove entries with a specific value from a map.
-        Merge two maps and handle duplicate keys.
-        Sort a map by values in ascending/descending order.
-        Perform various operations (add, remove, update) on a map.
+        12.2)Remove entries with a specific value from a map.
+        12.3)Merge two maps and handle duplicate keys.
+        12.4)Sort a map by values in ascending/descending order.
+        12.5)Perform various operations (add, remove, update) on a map.
+        ** Pending some test:  pending test add, update, and ask value.
+
 
     Object-Oriented Programming:
         Implement a class hierarchy with inheritance and polymorphism.

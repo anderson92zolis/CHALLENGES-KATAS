@@ -181,28 +181,32 @@ class MapManipulationTest {
         assertEquals(sortDscExpected,realAscMap);
     }
 
+
     @org.junit.jupiter.api.Test
-    void optionProgram() {
+    void updateKeyMap() {
 
-        String input = "1\nElephant\n2\nLion\n3\nTiger\n4\n0\n";
-        ByteArrayInputStream byteArrayInputStream = new ByteArrayInputStream(input.getBytes());
-        System.setIn(byteArrayInputStream);
+        String animal = "Elephant";
+        expectedMap1.put(animal, 2);
 
-        frequencyMap.optionProgram();
+        String newAnimal = "Lion";
+        frequencyMap.askWord("enter a name");
 
-        String expectedOutput = "\n 0 to leave \n 1 to add \n 2 remove \n 3 update \n 4 print\n\tEnter option example: " +
-                "Enter a Animal name to add" +
-                "Enter option example: " +
-                "Enter a Animal name to remove" +
-                "Enter option example: " +
-                "Enter a Animal name to update" +
-                "Enter option example: " +
-                "Elephant: 1\nLion: 1\nTiger: 1\n" +
-                "Enter option example: " +
-                "Thanks for use the program!\n";
+        frequencyMap.updateKeyMap(animal);
 
-        Assertions.assertEquals(expectedOutput, outputStream.toString());
+        Assertions.assertFalse(expectedMap1.containsKey(animal));
+        Assertions.assertTrue(expectedMap1.containsKey(newAnimal));
+        Assertions.assertEquals(1, expectedMap1.get(newAnimal));
     }
+
+    @org.junit.jupiter.api.Test
+    void capitalizeFirstLetter() {
+    }
+
+    @org.junit.jupiter.api.Test
+    void askWord() {
+    }
+
+
 
     @org.junit.jupiter.api.Test
     @DisplayName("add animal")
@@ -226,26 +230,28 @@ class MapManipulationTest {
     }
 
     @org.junit.jupiter.api.Test
-    void updateKeyMap() {
+    @DisplayName("optionProgram")
+    void optionProgram() {
 
-        String animal = "Elephant";
-        expectedMap1.put(animal, 2);
+        String input = "1\nElephant\n2\nLion\n3\nTiger\n4\n0\n";
+        ByteArrayInputStream byteArrayInputStream = new ByteArrayInputStream(input.getBytes());
+        System.setIn(byteArrayInputStream);
 
-        String newAnimal = "Lion";
-        frequencyMap.askWord = () -> newAnimal;
+        frequencyMap.optionProgram();
 
-        yourClass.updateKeyMap(animal);
+        String expectedOutput = "\n 0 to leave \n 1 to add \n 2 remove \n 3 update \n 4 print\n\tEnter option example: " +
+                "Enter a Animal name to add" +
+                "Enter option example: " +
+                "Enter a Animal name to remove" +
+                "Enter option example: " +
+                "Enter a Animal name to update" +
+                "Enter option example: " +
+                "Elephant: 1\nLion: 1\nTiger: 1\n" +
+                "Enter option example: " +
+                "Thanks for use the program!\n";
 
-        Assertions.assertFalse(frecuencyElements.containsKey(animal));
-        Assertions.assertTrue(frecuencyElements.containsKey(newAnimal));
-        Assertions.assertEquals(1, frecuencyElements.get(newAnimal));
+        Assertions.assertEquals(expectedOutput, outputStream.toString());
     }
 
-    @org.junit.jupiter.api.Test
-    void capitalizeFirstLetter() {
-    }
 
-    @org.junit.jupiter.api.Test
-    void askWord() {
-    }
 }
