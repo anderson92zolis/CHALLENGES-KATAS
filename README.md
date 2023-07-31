@@ -56,7 +56,7 @@ These katas cover a range of topics and will help you sharpen your Java programm
         12.2) Create classes to represent real-world entities (e.g., Person, Animal, Car) with appropriate properties and methods.
         12.3) Implement interfaces and define their methods in concrete classes.
         12.4) Use encapsulation to hide internal implementation details.
-        Apply inheritance and overriding to customize behavior in subclasses.
+        12.5) Apply inheritance and overriding to customize behavior in subclasses.
 
     Lambdas and Functional Programming:
         Filter a list of objects based on a specific condition using lambdas.
