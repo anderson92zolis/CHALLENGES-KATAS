@@ -26,6 +26,15 @@ public class Main {
 
         System.out.println(filterCustomers);
 
+        System.out.println("14.2) Map elements of a list to a new list using a lambda expression.");
+
+        List<String> filterNameByNames= customers
+                .stream()
+                .map(c->c.getName())
+                .collect(Collectors.toList());
+
+        System.out.println(filterNameByNames);
+
         }
 
 }
