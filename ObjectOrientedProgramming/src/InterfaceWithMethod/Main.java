@@ -15,6 +15,13 @@ public class Main {
         person2.printData();
         person2.sleep();
 
+
+        System.out.println("12.4) Use encapsulation to hide internal implementation details.");
+
+        System.out.println("the ID of a person one is: : " + person1.getId() + " and the gender is: " + person1.getGender());
+        person1.setId("123");
+        System.out.println("the NEW ID of a person one is: : " + person1.getId() + " and the gender is: " + person1.getGender());
+
     }
 
 }
