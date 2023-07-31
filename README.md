@@ -55,7 +55,7 @@ These katas cover a range of topics and will help you sharpen your Java programm
         12.1) Implement a class hierarchy with inheritance and polymorphism. 
         12.2) Create classes to represent real-world entities (e.g., Person, Animal, Car) with appropriate properties and methods.
         12.3) Implement interfaces and define their methods in concrete classes.
-        Use encapsulation to hide internal implementation details.
+        12.4) Use encapsulation to hide internal implementation details.
         Apply inheritance and overriding to customize behavior in subclasses.
 
     Lambdas and Functional Programming:
