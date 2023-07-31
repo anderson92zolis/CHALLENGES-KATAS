@@ -51,15 +51,16 @@ These katas cover a range of topics and will help you sharpen your Java programm
         ** Pending some test:  pending test add, update, and ask value.
 
 
- 13)   Object-Oriented Programming:
-        12.1) Implement a class hierarchy with inheritance and polymorphism. 
-        12.2) Create classes to represent real-world entities (e.g., Person, Animal, Car) with appropriate properties and methods.
-        12.3) Implement interfaces and define their methods in concrete classes.
-        12.4) Use encapsulation to hide internal implementation details.
-        12.5) Apply inheritance and overriding to customize behavior in subclasses.
+13) Object-Oriented Programming:
+        13.1) Implement a class hierarchy with inheritance and polymorphism. 
+        13.2) Create classes to represent real-world entities (e.g., Person, Animal, Car) with appropriate properties and methods.
+        13.3) Implement interfaces and define their methods in concrete classes.
+        13.4) Use encapsulation to hide internal implementation details.
+        13.5) Apply inheritance and overriding to customize behavior in subclasses.
+        ** Pending some test: 
 
-    Lambdas and Functional Programming:
-        Filter a list of objects based on a specific condition using lambdas.
+14) Lambdas and Functional Programming:
+        14.1) Filter a list of objects based on a specific condition using lambdas.
         Map elements of a list to a new list using a lambda expression.
         Perform operations such as sum, average, or maximum on a list using streams and lambdas.
         Sort a list of objects based on a specific property using a lambda comparator.
