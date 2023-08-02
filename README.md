@@ -64,7 +64,8 @@ These katas cover a range of topics and will help you sharpen your Java programm
         14.2) Map elements of a list to a new list using a lambda expression.
         14.3) Perform operations such as sum, average, or maximum on a list using streams and lambdas.
         14.4) Sort a list of objects based on a specific property using a lambda comparator.
-        14,5) Implement functional interfaces and use them in lambda expressions.
+        14.5) Implement functional interfaces and use them in lambda expressions.
+        ** Pending some test: 
 
     String Manipulation:
         Reverse a string.
