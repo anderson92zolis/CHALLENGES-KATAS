@@ -12,7 +12,7 @@ public class Main {
     public static void main(String[] args) {
 
 
-        System.out.println("/n"+"14.1) Filter a list of objects based on a specific condition using lambdas.");
+        System.out.println("\n"+"14.1) Filter a list of objects based on a specific condition using lambdas.");
         Customer john = new Customer("John P.", 35,50);
         Customer sarah = new Customer("Sarah M.", 18,200);
         Customer charles = new Customer("Charles B.", 32,150);
@@ -27,7 +27,7 @@ public class Main {
 
         System.out.println(filterCustomers);
 
-        System.out.println("/n"+"14.2) Map elements of a list to a new list using a lambda expression.");
+        System.out.println("\n"+"14.2) Map elements of a list to a new list using a lambda expression.");
 
         List<String> ListByNames= customers
                 .stream()
@@ -36,7 +36,7 @@ public class Main {
 
         System.out.println(ListByNames);
 
-        System.out.println("/n"+" 14.3) Perform operations such as sum, average, or maximum on a list using streams and lambdas.");
+        System.out.println("\n"+" 14.3) Perform operations such as sum, average, or maximum on a list using streams and lambdas.");
 
         Integer sum = customers
                 .stream()
@@ -59,12 +59,28 @@ public class Main {
 
         System.out.println("The maximum of ages are: "+maximun);
 
-        System.out.println("/n"+" 14.4) Sort a list of objects based on a specific property using a lambda comparator.");
+        System.out.println("\n"+" 14.4) Sort a list of objects based on a specific property using a lambda comparator.");
         // https://www.geeksforgeeks.org/java-lambda-expression-with-collections/
         Collections.sort(customers, (o1, o2) -> (o1.getAge() > o2.getAge()) ? 1 :
                 (o1.getAge() < o2.getAge()) ? -1 : 0);
 
         System.out.println("Elements of the Customer List after sorting by Age: " + customers);
+
+        System.out.println("\n"+"14,5) Implement functional interfaces and use them in lambda expressions.");
+        //https://www.geeksforgeeks.org/functional-interfaces-java/
+
+        // lambda expression to define the calculate method
+        SquareOfPoints sPoints =(double x )-> x * x;
+
+        // parameter passed and return type must be
+        // same as defined in the prototype
+        double sPointsOfMaxumun = sPoints.square(
+                average = customers
+                .stream()
+                .mapToInt(a -> a.getAge())
+                .max().orElse(0)  );
+
+        System.out.println("maximun point to square: " +sPointsOfMaxumun );
 
     }
 }
