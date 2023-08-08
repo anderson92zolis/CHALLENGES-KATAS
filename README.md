@@ -69,7 +69,6 @@ These katas cover a range of topics and will help you sharpen your Java programm
 
  15) String Manipulation:
         15.1) Reverse a string.
-        Check if a string is a palindrome.
         Count the occurrence of each character in a string.
         Split a sentence into words and count the frequency of each word.
         Remove whitespace or specific characters from a string.
